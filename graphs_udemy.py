@@ -34,7 +34,6 @@ class Graphs:
     pitesti = Vertex("Pitesti")
     bucharest = Vertex("Bucharest")
     giurgiu = Vertex("Giurgiu")
-    urziceni = Vertex("Urziceni")
 
     oradea.add_adjacents(Adjacent(zerind, 71))
     oradea.add_adjacents(Adjacent(sibiu, 151))
@@ -80,9 +79,15 @@ class Graphs:
 
     bucharest.add_adjacents(Adjacent(fagaras, 211))
     bucharest.add_adjacents(Adjacent(pitesti, 101))
-    bucharest.add_adjacents(Adjacent(urziceni, 85))
+    
 
 if __name__ == "__main__":
     graphs = Graphs()
 
     graphs.oradea.display_adjacents()
+
+    for adj in graphs.arad.adjacents:
+        print(adj.vertex.label)
+        print(adj.cust)
+
+    
