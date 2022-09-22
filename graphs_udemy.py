@@ -82,7 +82,7 @@ class Graphs:
     bucharest.add_adjacents(Adjacent(pitesti, 101))
     bucharest.add_adjacents(Adjacent(urziceni, 85))
 
+if __name__ == "__main__":
+    graphs = Graphs()
 
-graphs = Graphs()
-
-graphs.oradea.display_adjacents()
+    graphs.oradea.display_adjacents()
