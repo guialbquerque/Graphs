@@ -1,5 +1,5 @@
 import numpy as np
-
+from graphs_udemy import Graphs
 
 class Stack:
     def __init__(self, capacity):
@@ -34,9 +34,23 @@ class Stack:
             temp = self.__values[self.__top]
             self.__top -= 1
             return temp
-            
+
     def view_top(self):
         if self.__top == -1:
             return -1
         else:
             return self.__values[self.__top]
+
+
+if __name__ == "__main__":
+
+    graph = Graphs()
+    stack = Stack(5)
+    stack.Stack_Up(graph.arad)
+    stack.Stack_Up(graph.bucharest)
+    stack.Stack_Up(graph.fagaras)
+    stack.Stack_Up(graph.craiova)
+    print(stack.view_top().label)
+    stack.Stack_Up(graph.sibiu)
+    print(stack.view_top().label)
+    stack.Stack_Up(graph.timisoara)
