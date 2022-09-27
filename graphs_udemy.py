@@ -79,15 +79,16 @@ class Graphs:
 
     bucharest.add_adjacents(Adjacent(fagaras, 211))
     bucharest.add_adjacents(Adjacent(pitesti, 101))
-    
+    bucharest.add_adjacents(Adjacent(giurgiu, 90))
+
+    giurgiu.add_adjacents(Adjacent(bucharest, 90))
 
 if __name__ == "__main__":
     graphs = Graphs()
 
     graphs.oradea.display_adjacents()
 
-    for adj in graphs.arad.adjacents:
-        print(adj.vertex.label)
-        print(adj.cust)
+    print("-----")
+    graphs.arad.display_adjacents()
 
     
