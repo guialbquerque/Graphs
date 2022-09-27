@@ -12,7 +12,7 @@ class DepthSearch:
         top = self.stack.view_top()
         print(f'Top of stack: {top.label}')
         for adj in top.adjacents:
-            print(f'Top is: {top. label}. Is {adj.vertex.label} already visited? {adj.vertex.visited}')
+            print(f'Top is: {top.label}. Is {adj.vertex.label} already visited? {adj.vertex.visited}')
             if adj.vertex.visited == False:
                 adj.vertex.visited = True
                 self.stack.Stack_Up(adj.vertex)
