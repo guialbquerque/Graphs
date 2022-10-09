@@ -48,7 +48,7 @@ class CircularQueue:
         return self.__values
 
     def first_final_queue(self):
-        return f"First element: {self.__values[self.__begin]}\nFinal element: {self.__values[self.__final]}"
+        return f"First element: {self.__values[self.__begin].label}\nFinal element: {self.__values[self.__final].label}"
 
 
 if __name__ == "__main__":
