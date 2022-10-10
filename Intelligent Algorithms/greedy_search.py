@@ -20,7 +20,7 @@ class GreedySearch:
                     vector.insert(adj.vertex)
             vector.printer()
             print("--------------------")
-            print(f'City chosen: {vector.values[0].label  }')
+            print(f'City chosen: {vector.values[0].label}')
             print("--------------------")
 
             if vector.values[0] != None:
