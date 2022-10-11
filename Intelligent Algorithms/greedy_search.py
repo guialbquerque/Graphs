@@ -8,7 +8,7 @@ class GreedySearch:
     
     def search(self, actual):
         print(f'Actual: {actual.label}')
-        actual.visitado = True
+        actual.visited = True
 
         if actual == self.target:
             self.found = True
