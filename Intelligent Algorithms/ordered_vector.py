@@ -8,7 +8,7 @@ class OrderedVector:
         self._lastPosition = -1
         self.values = np.empty(self._capacity, dtype = object)
 
-    # O(N)
+   
     def printer(self):
         if self._lastPosition == -1:
             print("Vector is empty!")
